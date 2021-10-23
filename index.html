@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <style>
+        body{
+            background-color: coral;
+            text-align: center;
+            background-image: url("https://media.istockphoto.com/photos/hand-catching-raindrops-picture-id1185317534?s=612x612");
+        }
+        input{
+            margin: 10px;
+            padding: 5px;
+        }
+        h2{
+            margin-top: 200px;
+            
+        }
+        h2:hover{ font-size: 35px;
+            color: rgb(97, 20, 220);
+
+        }
+        button:hover{
+            opacity: 0.8;
+            color: red;
+            background-color: lightblue;
+            padding: 10px;
+            font-style: italic;
+            font-size: 25px;
+            border-radius: 50px;
+        }
+        button{
+            padding: 12px;
+            color: blue;
+            border-radius: 5px;
+        }
+        #main{
+            background-color: greenyellow;
+            background-size: cover;
+            
+            background-image: url("https://media.istockphoto.com/photos/hand-catching-raindrops-picture-id1185317534?s=612x612");
+        }
+        #sub{
+            background-color: hotpink;
+            background-size: cover;
+            background-image: url("https://media.istockphoto.com/photos/rain-drops-background-picture-id891663762?s=612x612");
+        }
+        #H:hover p{
+            display: inline;
+            font-size: 55px;
+            color: red;
+
+        }
+        p{
+            display: none;
+        }
+        #H{
+            margin: 10px;
+        }
+        span{
+            color: greenyellow;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- select tag -->
+    <div id="main">
+        <div id="sub">
+    <h2>My Form</h2>
+    <form action="" style="display: block;">
+        <label for="">Name</label>
+        <input style="padding: 5px;margin: 15px;" type="text" name="name" placeholder="Enter ur name" id=""  minlength="3" maxlength="10" pattern="[a-Z]"><br>
+        <label for="">Password</label>
+        <input type="password" name="password" placeholder="Enter the password"   minlength="8" pattern="[a-Z]"><br>
+        <label for="">Number</label>
+        +91<input type="number" name="" id=""  minlength="10"  maxlength="10" pattern="[0-9]" placeholder="Phone number"><br>
+        <label for="">Email</label>
+        <input type="email" required placeholder="Enter email" name="" id=""  pattern=".+@gmail.com"><br>
+ 
+
+    <label for="selector">select the product</label>
+    <select style="margin: 15px;padding: 5px;"  id="selector">
+        <option value="car">Car</option>
+        <option value="bike" selected>Bike</option>
+        <option value="bicycle">Bicycle</option>
+        <option value="bus">Bus</option>
+
+    </select> <br>
+    <input type="submit" name="name" id="" style="margin-left: 0px;margin-top: 10px; padding: 2px;">
+    <button>submit</button>
+</form>
+        </div>
+        </div>
+        <div id="H">
+            <span>please hover on me to be superman text </span><br>
+            <p>Superman</p>
+        </div>
+    
+    <!-- it tells that 'label' is bound to or used by which 'form' element -->
+
+   
+</body>
+</html>
